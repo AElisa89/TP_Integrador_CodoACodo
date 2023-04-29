@@ -13,15 +13,26 @@
     <div class="container-fluid">
         <!-------------Inicio header-------------------->
         <header>
-            <nav class="navbar bg-body-tertiary">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#">
-                    <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-                    Bootstrap
-                  </a>
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="./images/logo.png" alt="" width="150px" /></a>
+                <a class="navbar-brand" href="#">Conf Bs As </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <a class="nav-link " href="#">La conferencia</a>
+                      <a class="nav-link " href="#">Los oradores</a>
+                      <a class="nav-link " href="#">El lugar y la fecha</a>
+                      <a class="nav-link " href="#">Conviértete en orador</a>
+                      <a class="nav-link " href="#">Comprar tickets</a>
+                      
+                    </div>
                 </div>
-              </nav>
-        </header> <!-------fin header--------->
+            </div>
+         </nav>
+        </header> 
 
 
 
@@ -43,8 +54,8 @@
 
 
 
-        <!--------Incio cards speakers----------------> 
-        <div class="row">        
+        <!--------ORADORES----------------> 
+        <div class="row oradores" >        
             <div class="col">
                 <div class="card" style="width: 18rem;">
                     <img src="./images/speakers/steve.jpg" class="card-img-top" alt="...">
@@ -81,12 +92,12 @@
                   </div>
             </div>
         </div>
-         <!--------fin cards speakers----------------> 
+       
 
 
 
 
-        <!--------Incio seccion BA Octubre---------------->
+        <!--------BS AS OCTUBRE---------------->
         <div class="row">
             <div class="col"> <img src="./images/places/honolulu.jpg" class="d-block w-100" alt="..."> </div>
             <div class="col">
@@ -97,9 +108,33 @@
         
             </div>
         
-        </div> <!-------- fin seccion BA Octubre---------------->
+        </div> 
 
 
+
+        <!--------------FORMULARIO---------------->
+        <div class="card text-center">
+          <div class="card-header">Conviértete en un</div>
+          <div class="card-body">
+            <h5 class="card-title">ORADOR</h5>
+            <p class="card-text">Anótate como orador para dar una charla ignite. Cuéntanos de qué quieres hablar!</p>
+            <div class="row">
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+              </div>
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+              </div>
+            </div>
+            <div class="form-floating">
+              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+              <label for="floatingTextarea">Comments</label>
+            </div>
+
+            <a href="#" class="btn btn-primary">somewhere</a>
+
+          </div>
+        </div>
 
 
     </div> 
