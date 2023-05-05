@@ -1,6 +1,64 @@
-* , html{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+:root{
+  --primary-color: white;
+} /*variables globales*/
 
+
+
+.oradores{
+  display: flex;
+
+}/*ARREGLAR ESTO!*/
+
+
+
+
+.octubre{
+  background-color: #40434a;
+  color: var(--primary-color);
+}
+
+
+.card-title{
+  padding: 1rem 0rem ;
+}
+
+#link-octubre{
+  color: var(--primary-color);
+  border-style:solid;
+  border-radius: 0.25rem;
+  border-width: 2px;
+  padding: 0.3rem 0.5rem;
+  border-color: var(--primary-color);
+  text-decoration: none;
+}
+
+
+.formulario{
+  display: flex;
+  justify-content: center;
+}
+.datos{
+  display:flex;
+  flex-direction: row;
+}
+
+#boton-enviar{
+  background-color: rgb(150, 194, 29);
+  border-style: none;
+  color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+}
+
+
+
+.footer-nav{
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  background-color: #094459;
+  color: var(--primary-color);
+}
