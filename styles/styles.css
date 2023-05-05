@@ -1,70 +1,71 @@
-/*variables globales*/
-:root{
-  /*font color*/
+:root {
   --primary-color: white;
-  /*font size*/
-  --text-large: 5.2em;
-  --text-medium: 2.2em;
-  --text-base: 1.6em;
-  --text-small: 1.4em;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
 
-.container-md{
+.main-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: end;
+  background-image: url(../images/ba1.jpg);
+  color: var(--primary-color);
+  height: 100vh;
 }
 
-.container{
+.main-text {
+  padding-left: 51vw;
+  padding-right: 9vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: inherit;
+  background-color: rgba(0, 0, 0, 0.5);
 
+}
+
+
+
+.text-oradores,
+.card-text {
+  font-size: small;
+  line-height: 1.5rem;
+  text-align: left;
+}
+
+
+.octubre {
+  background-color: #35383d;
+  color: var(--primary-color);
+ 
+}
+
+
+.card-title {
+  padding: 1rem 0rem;
+}
+
+
+.formulario {
   display: flex;
   justify-content: center;
+
 }
 
-
-
-
-
-
-.octubre{
-  background-color: #40434a;
-  color: var(--primary-color);
+#form-contacto {
+  border-style: none;
 }
 
-
-.card-title{
-  padding: 1rem 0rem ;
-}
-
-#link-octubre{
-  color: var(--primary-color);
-  border-style:solid;
-  border-radius: 0.25rem;
-  border-width: 2px;
-  padding: 0.3rem 0.5rem;
-  border-color: var(--primary-color);
-  text-decoration: none;
-}
-
-
-.formulario{
+.datos {
   display: flex;
-  justify-content: center;
-  
-}
-
-#form-contacto{
-
- border-style: none;
-}
-
-.datos{
-  display:flex;
   flex-direction: row;
 }
 
-#boton-enviar{
+#boton-enviar {
   background-color: rgb(150, 194, 29);
   border-style: none;
   color: var(--primary-color);
@@ -76,8 +77,7 @@
 }
 
 
-
-.footer-nav{
+.footer-nav {
   display: flex;
   justify-content: space-around;
   padding: 2rem;
