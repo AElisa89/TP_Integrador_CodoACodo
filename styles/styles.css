@@ -1,13 +1,28 @@
+/*variables globales*/
 :root{
+  /*font color*/
   --primary-color: white;
-} /*variables globales*/
+  /*font size*/
+  --text-large: 5.2em;
+  --text-medium: 2.2em;
+  --text-base: 1.6em;
+  --text-small: 1.4em;
+}
 
 
-
-.oradores{
+.container-md{
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-}/*ARREGLAR ESTO!*/
+.container{
+
+  display: flex;
+  justify-content: center;
+}
+
+
 
 
 
@@ -36,7 +51,14 @@
 .formulario{
   display: flex;
   justify-content: center;
+  
 }
+
+#form-contacto{
+
+ border-style: none;
+}
+
 .datos{
   display:flex;
   flex-direction: row;
