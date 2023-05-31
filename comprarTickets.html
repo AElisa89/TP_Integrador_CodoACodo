@@ -40,21 +40,21 @@
     <!--------------------SECCIÓN CATEGORIAS-------------------->
 
     <div class="descuentos">
-        <div class="categorias">
+        <div class="categorias border-2 border-primary">
             <h5 class="card-title">Estudiante</h5>
             <h6 class="card-subtitle mb-2 text-body-secondary">Tienen un descuento</h6>
             <h3>80%</h3>
             <span>* Presentar documentación</span>
         </div>
 
-        <div class="categorias">
+        <div class="categorias border-2 border-success">
             <h5 class="card-title">Trainee</h5>
             <h6 class="card-subtitle mb-2 text-body-secondary">Tienen un descuento</h6>
             <h3>50%</h3>
             <span>* Presentar documentación</span>
         </div>
 
-        <div class="categorias">
+        <div class="categorias border-2 border-warning">
             <h5 class="card-title">Junior</h5>
             <h6 class="card-subtitle mb-2 text-body-secondary">Tienen un descuento</h6>
             <h3>15%</h3>
@@ -66,7 +66,8 @@
     <!-----------SECCION FORMULARIO------------------>
 
     <div class="row formulario">
-        <div class="card text-center mb-3" style="width: 50rem;" id="form-contacto">
+        <div class="card text-center mb-3" style="width: 50rem" id="form-contacto">
+
           <div class="card-body"><br>
             <SPAN>VENTA</SPAN>
             <h1 class="card-title">VALOR DE TICKET $ 200</h1>
@@ -80,30 +81,35 @@
             </div>
 
             <div class="datos">
+              <div class="col" id="cant-cat">
+                <span> Cantidad</span>          
+            </div>
+            <div class="col" id="cant-cat">
+                <span> Categoria</span>          
+            </div>
+            </div>
+
+            <div class="datos">
                 <input class="form-control" placeholder="Cantidad" id="cantidad">
-                <label for="cantidad" class="form-label">Categoría</label>
-                <select id="categoria" class="form-select">
+                <select class="form-select" id="categoria">
                     <option value="1">Estudiante</option>
                     <option value="2">Trainee</option>
                     <option value="3">Junior</option>
                 </select>
             </div>
-            <div class="row mb-3">
-                <div class="col">
-                  <div class="alert alert-primary" role="alert">
-                    Total a pagar: $ <span id="precioFinal"></span>
-                  </div>
-                </div>
+
+            <div class="alert alert-primary" role="alert">
+              Total a pagar: $ <span id="precioFinal"></span>
             </div>
-            
+
             <div class="botones-comprar">   
-            <a href="#" class="btn btn-primary" id="btn-borrar" onclick="borrar()">Borrar</a>
-            <a href="#" class="btn btn-primary" id="btn-resumen" onclick="calcularTotal()">Resumen</a>
+                <button class="boton" id="btn-borrar" onclick="borrar()">Borrar</button>
+                <button class="boton" id="btn-resumen" onclick="calcularTotal()">Resumen</button>
             </div>
           </div>
+
         </div>
-    
-    
+       
     </div>
   
 
