@@ -83,9 +83,9 @@
                 <input class="form-control" placeholder="Cantidad" id="cantidad">
                 <label for="cantidad" class="form-label">Categoría</label>
                 <select id="categoria" class="form-select">
-                    <option value="estudiante">Estudiante</option>
-                    <option value="trainee">Trainee</option>
-                    <option value="junior">Junior</option>
+                    <option value="1">Estudiante</option>
+                    <option value="2">Trainee</option>
+                    <option value="3">Junior</option>
                 </select>
             </div>
             <div class="row mb-3">
@@ -97,8 +97,8 @@
             </div>
             
             <div class="botones-comprar">   
-            <a href="#" class="btn btn-primary" id="btn-borrar">Borrar</a>
-            <a href="#" class="btn btn-primary" id="btn-resumen">Resumen</a>
+            <a href="#" class="btn btn-primary" id="btn-borrar" onclick="borrar()">Borrar</a>
+            <a href="#" class="btn btn-primary" id="btn-resumen" onclick="calcularTotal()">Resumen</a>
             </div>
           </div>
         </div>
