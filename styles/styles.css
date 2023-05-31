@@ -3,8 +3,8 @@
 }
 
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0%;
+  padding: 0%;
 }
 
 .main-section {
@@ -63,7 +63,10 @@
 .datos {
   display: flex;
   flex-direction: row;
+  margin: 1.5%;
 }
+
+
 
 #boton-enviar {
   background-color: rgb(150, 194, 29);
@@ -73,9 +76,9 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-
+  margin: 1%;
+  
 }
-
 
 .footer-nav {
   display: flex;
@@ -83,4 +86,42 @@
   padding: 2rem;
   background-color: #094459;
   color: var(--primary-color);
+}
+
+
+
+
+/*-------ESTILOS PAGINA COMPRAR TICKETS----------*/
+.descuentos{
+  display: flex;
+  justify-content: center;
+  padding: 3%;
+
+}
+
+
+.categorias{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;  
+  border-color: blue;
+  padding: 1.5%;
+  margin: 0.5%;
+}
+
+
+.botones-comprar{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+#total{
+  background-color: rgb(77, 161, 194);
+  display: flex;
+  border-style: solid;
+  border-color: #094459;
+  border-radius: 5%;
 }
